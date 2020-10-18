@@ -46,13 +46,13 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "localhost:4200",
-    "adx-ui-by-sai.vercel.app"
+    "http://localhost:4200",
+    "https://adx-ui-by-sai.vercel.app"
 ]
 
-# CORS_ORIGIN_REGEX_WHITELIST = [
-#     r"^https://\w+\.vercel\.app$",
-# ]
+CORS_ORIGIN_REGEX_WHITELIST = [
+    r"^https://\w+\.vercel\.app$",
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
