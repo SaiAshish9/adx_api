@@ -29,7 +29,7 @@ SECRET_KEY =config('secret')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'localhost', '127.0.0.1','https://adx-ui-by-sai.vercel.app/']
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1','adx-api-by-sai.herokuapp.com']
 
 
 # Application definition
@@ -46,13 +46,13 @@ INSTALLED_APPS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:4200",
-    "https://adx-ui-by-sai.vercel.app"
+    "localhost:4200",
+    "adx-ui-by-sai.vercel.app"
 ]
 
-CORS_ORIGIN_REGEX_WHITELIST = [
-    r"^https://\w+\.vercel\.app$",
-]
+# CORS_ORIGIN_REGEX_WHITELIST = [
+#     r"^https://\w+\.vercel\.app$",
+# ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
