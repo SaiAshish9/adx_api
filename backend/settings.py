@@ -29,7 +29,7 @@ SECRET_KEY =config('secret')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1','https://adx-ui-by-sai.vercel.app/']
 
 
 # Application definition
@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders'
 ]
-# gh
+
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:4200"
+    "http://localhost:4200/",
+    "https://adx-ui-by-sai.vercel.app/"
 ]
 
 CORS_ORIGIN_REGEX_WHITELIST = [
