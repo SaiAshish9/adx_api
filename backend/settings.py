@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders'
 ]
-
+# gh
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200"
 ]
