@@ -112,7 +112,7 @@ def result(url):
     for i in range(28, len(dx)):
          adx.append((adx[i-1]*13+dx[i])/14)
     c['ADX'] = adx
-    c.fillna(0, inplace=True)
+#     c.fillna(0, inplace=True)
     c.to_csv('result.csv')
     fb = open('result.csv', 'rb')
     res = cloudinary.uploader.upload(fb, upload_preset='react-tracks',
